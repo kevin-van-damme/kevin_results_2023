@@ -6,7 +6,7 @@
     "dev": "vite --open --host",
     "build": "vite build",
     "preview":"vite preview --open --host",
-    "deploy": "surge ./dist hannahdesign3.surge.sh",
+    "deploy": "surge ./dist retarded4life.surge.sh",
     "postdelay": ""
   },
   "keywords": [],
