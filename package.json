@@ -1,0 +1,16 @@
+{
+  "name": "11.design3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open --host",
+    "build": "vite build",
+    "preview":"vite preview --open --host",
+    "deploy": "surge ./dist hannahdesign3.surge.sh",
+    "postdelay": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
