@@ -1,5 +1,5 @@
 @import url(https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css);
-
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   font-size: 62.5%;
   --LightSlateBlue: hsl(252, 100%, 67%);
@@ -17,7 +17,143 @@
 * {
   box-sizing: border-box;
 }
-h1 {
-  background-color: var(--OrangeyYellow);
-  font-size: 20rem;
+main {
+  display: grid;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  section {
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    &:nth-child(1) {
+      background-image: linear-gradient(
+        var(--LightSlateBlue),
+        var(--LightRoyalBlue)
+      );
+      border-radius: 0 0 3rem 3rem;
+      h1 {
+        color: var(--LightLavender);
+        font-weight: 700;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.3rem;
+        margin: 3rem auto;
+        width: 45%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-image: linear-gradient(
+          var(--VioletBlue),
+          var(--PersianBlue)
+        );
+        h3 {
+          font-size: 15vw;
+          font-weight: 800;
+        }
+        h4 {
+          color: var(--LightLavender);
+          font-size: 3vw;
+        }
+      }
+      h2 {
+        font-size: 2.2rem;
+        font-weight: 800;
+      }
+      p {
+        color: var(--LightLavender);
+        width: 70%;
+        margin: 1rem auto;
+        line-height: 2.1rem;
+      }
+    }
+    &:nth-child(2) {
+      color: black;
+      h2 {
+        display: flex;
+        color: black;
+        font-weight: 700;
+        margin-bottom: 3rem;
+      }
+      ul {
+        margin: 3rem à;
+        display: grid;
+        gap: 1.8rem;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          border-radius: 1rem;
+          padding: 2rem;
+          p {
+            &:nth-of-type(1) {
+              margin-right: auto;
+            }
+            &:nth-of-type(2) {
+              color: rgb(148, 146, 146);
+              strong {
+                color: black;
+                font-weight: 800;
+              }
+            }
+          }
+          &:nth-child(1) {
+            color: var(--LightRed);
+            background-color: color-mix(
+              in hsl,
+              var(--LightRed) 10%,
+              transparent
+            );
+          }
+          &:nth-child(2) {
+            color: var(--OrangeyYellow);
+            background-color: color-mix(
+              in hsl,
+              var(--OrangeyYellow) 10%,
+              transparent
+            );
+          }
+          &:nth-child(3) {
+            color: var(--GreenTeal);
+            background-color: color-mix(
+              in hsl,
+              var(--GreenTeal) 10%,
+              transparent
+            );
+          }
+          &:nth-child(4) {
+            color: var(--CobaltBlue);
+            background-color: color-mix(
+              in hsl,
+              var(--CobaltBlue) 10%,
+              transparent
+            );
+          }
+        }
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        font-weight: 700;
+        font-size: 2rem;
+        width: auto;
+        padding: 2rem;
+        border-radius: 4rem;
+        margin: 2rem;
+        &:hover {
+          background-image: linear-gradient(
+            var(--VioletBlue),
+            var(--LightRoyalBlue)
+          );
+          color: white;
+          transition: all 300ms 0s ease-in-out;
+        }
+      }
+    }
+  }
 }
