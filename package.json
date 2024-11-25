@@ -6,8 +6,10 @@
     "dev": "vite --open --host",
     "build": "vite build",
     "preview":"vite preview --open --host",
-    "deploy": "surge ./dist dontrunthisbuild.surge.sh",
-    "postdelay": ""
+    "deploy-main": "surge ./dist dontrunthisbuild.surge.sh",
+    "postdevelop-main": "",
+    "deploy-develop": "surge ./dist dontrunthisbuild-test.surge.sh",
+    "postdeploy-develop": ""
   },
   "keywords": [],
   "author": "",
