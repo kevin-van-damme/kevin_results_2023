@@ -1,5 +1,7 @@
 @import url(https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
 :root {
   font-size: 62.5%;
   --LightSlateBlue: hsl(252, 100%, 67%);
@@ -49,6 +51,11 @@ main {
           var(--VioletBlue),
           var(--PersianBlue)
         );
+        opacity: 0;
+        animation-name: bounceIn;
+        animation-duration: 500ms;
+        animation-delay: 500ms;
+        animation-fill-mode: forwards;
         h3 {
           font-size: 15vw;
           font-weight: 800;
@@ -67,6 +74,11 @@ main {
         width: 70%;
         margin: 1rem auto;
         line-height: 2.1rem;
+      }
+      h2,
+      p {
+        animation-name: fadeInDown;
+        animation-duration: 2s;
       }
     }
     &:nth-child(2) {
@@ -100,6 +112,11 @@ main {
             }
           }
           &:nth-child(1) {
+            opacity: 0;
+            animation-name: fadeInRight;
+            animation-duration: 900ms;
+            animation-delay: 250ms;
+            animation-fill-mode: forwards;
             color: var(--LightRed);
             background-color: color-mix(
               in hsl,
@@ -108,6 +125,11 @@ main {
             );
           }
           &:nth-child(2) {
+            opacity: 0;
+            animation-name: fadeInRight;
+            animation-duration: 900ms;
+            animation-delay: 500ms;
+            animation-fill-mode: forwards;
             color: var(--OrangeyYellow);
             background-color: color-mix(
               in hsl,
@@ -116,6 +138,11 @@ main {
             );
           }
           &:nth-child(3) {
+            opacity: 0;
+            animation-name: fadeInRight;
+            animation-duration: 900ms;
+            animation-delay: 750ms;
+            animation-fill-mode: forwards;
             color: var(--GreenTeal);
             background-color: color-mix(
               in hsl,
@@ -124,6 +151,11 @@ main {
             );
           }
           &:nth-child(4) {
+            opacity: 0;
+            animation-name: fadeInRight;
+            animation-duration: 900ms;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
             color: var(--CobaltBlue);
             background-color: color-mix(
               in hsl,
